@@ -32,19 +32,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#FDFF93"
         android:text="피자 만들기"
         android:textColor="@color/black"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+        android:backgroundTint="#FDFF93"/>
 
-    <Button android:id="@+id/calender"
+    <Button
+        android:id="@+id/calender"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24dp"
         android:text="캘린더 보기"
         android:layout_gravity="center"
-        android:backgroundTint="#FDFF93"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:backgroundTint="#FDFF93"/>
 
 </LinearLayout>

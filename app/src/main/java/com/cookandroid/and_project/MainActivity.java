@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 TextView Day;
-Button MakeP, Calender;
+Button MakeP, btn_Calender;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,20 +24,20 @@ Button MakeP, Calender;
         actionBar.hide();
         Day = findViewById(R.id.Day);
         MakeP = findViewById(R.id.MakePizza);
-        Calender = findViewById(R.id.calender);
+        btn_Calender = findViewById(R.id.calender);
 
         Calendar cal = Calendar.getInstance();
         int y=0, m=0, d=0;
 
         y = cal.get(Calendar.YEAR);
-        m = cal.get(Calendar.MONTH) +1;
+        m = cal.get(Calendar.MONTH);
         d = cal.get(Calendar.DAY_OF_MONTH);
 
-        Day.setText(y+"-"+m+"-"+d);
-        Calender.setOnClickListener(new View.OnClickListener() {
+        Day.setText(y+"-"+(m+1)+"-"+d);
+        btn_Calender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(getApplicationContext(), Calendar.class);
+                Intent in = new Intent(MainActivity.this, CalenderActivity.class);
                 startActivity(in);
             }
         });

@@ -14,7 +14,7 @@
             android:name=".MakePizza"
             android:exported="false" />
         <activity
-            android:name=".Calender"
+            android:name=".CalenderActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
