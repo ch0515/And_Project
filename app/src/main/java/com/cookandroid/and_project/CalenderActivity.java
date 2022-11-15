@@ -55,7 +55,7 @@ public class CalenderActivity extends AppCompatActivity {
         }else if(randomValue == 1){
             pizzatext.setText("오늘의 피자는 새우피자");
         }else{
-            pizzatext.setText("오늘의 피자는 감자 피자");
+            pizzatext.setText("오늘의 피자는 감자피자");
         }
     }
 }
