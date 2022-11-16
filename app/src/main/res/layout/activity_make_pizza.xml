@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/makeback"
     tools:context=".MakePizza">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_cal"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="28dp"
+            android:src="@drawable/calendar"/>
+        <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/plus"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="22dp"/>
+        <TextView android:id="@+id/Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022 - 08 - 16"
+            android:textSize="27dp" android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="24dp"/>
+        <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/rightarrow"
+            android:layout_marginLeft="19dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/item_switch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:background="?android:attr/listChoiceIndicatorMultiple"/>
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="44dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/oni"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/oni"/>
+        <ImageView android:id="@+id/mus"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/mus"/>
+        <ImageView android:id="@+id/tom"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/tom"/>
+        <ImageView android:id="@+id/pi"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/pi"/>
+        <ImageView android:id="@+id/ham"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/ham"/>
+        <ImageView android:id="@+id/oli"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/oli"/>
+        <ImageView android:id="@+id/pa"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/pa"/>
+    </FrameLayout>
+</LinearLayout>

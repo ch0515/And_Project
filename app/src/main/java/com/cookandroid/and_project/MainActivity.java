@@ -41,6 +41,13 @@ Button MakeP, btn_Calender;
                 startActivity(in);
             }
         });
+        MakeP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(MainActivity.this, MakePizza.class);
+                startActivity(in);
+            }
+        });
     }
 
 }
