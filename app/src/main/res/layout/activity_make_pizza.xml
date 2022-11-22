@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageButton
+        <ImageView
             android:id="@+id/btn_cal"
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:layout_marginTop="22dp"
             android:layout_marginLeft="28dp"
             android:src="@drawable/calendar"/>
-        <ImageButton
+        <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:src="@drawable/plus"
@@ -33,7 +33,7 @@
             android:textColor="#222222"
             android:layout_marginLeft="19dp"
             android:layout_marginTop="24dp"/>
-        <ImageButton
+        <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:layout_marginTop="22dp"
@@ -65,49 +65,51 @@
             android:layout_marginTop="220dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/oni"/>
         <ImageView android:id="@+id/mus"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="180dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/mus"/>
         <ImageView android:id="@+id/tom"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="200dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/tom"/>
         <ImageView android:id="@+id/pi"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="180dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/pi"/>
         <ImageView android:id="@+id/ham"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="200dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/ham"/>
         <ImageView android:id="@+id/oli"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="180dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:src="@drawable/oli"/>
-        <ImageView android:id="@+id/pa"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="180dp"
+
+        <ImageView
+            android:id="@+id/pa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="visible"
-            android:src="@drawable/pa"/>
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/pa"
+            android:visibility="invisible" />
     </FrameLayout>
 </LinearLayout>

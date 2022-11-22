@@ -6,45 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".CalenderActivity"
     android:orientation="vertical">
-
-<!--    <TextView android:id="@+id/calentv"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text=""-->
-<!--        android:textSize="30dp"-->
-<!--        android:layout_marginLeft="30dp"-->
-<!--        android:layout_marginTop="10dp"/>-->
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
     <CalendarView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
     <ImageView
         android:layout_marginBottom="-20dp"
         android:layout_width="500dp"
         android:layout_height="match_parent"
         android:src="@drawable/mat"/>
         <ImageView
-            android:layout_marginTop="50dp"
+            android:id="@+id/talk"
+            android:layout_marginTop="60dp"
             android:layout_width="400dp"
             android:layout_height="300dp"
             android:src="@drawable/speechbubble" />
-        <TextView
-            android:id="@+id/pizzatext"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="130dp"
-            android:textSize="25dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="오늘의 피자는?"/>
-    </FrameLayout>
 
+    </FrameLayout>
 </LinearLayout>
