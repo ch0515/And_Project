@@ -22,7 +22,7 @@ ImageView oni,mus,tom,pi,ham,oli,pa;
         setContentView(R.layout.activity_make_pizza);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-        Today = findViewById(R.id.Today);
+        Today = findViewById(R.id.txt);
         btn_cal = findViewById(R.id.btn_cal);
         oni = findViewById(R.id.oni);
         mus = findViewById(R.id.mus);
